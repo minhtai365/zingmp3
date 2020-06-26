@@ -150,6 +150,14 @@ input {
     background: rgba(36, 30, 30, 0.664);
     opacity: 1;
 }
+.bg-icon{
+    border-radius: 50%;
+    width: 30px;
+    text-align: center;
+}
+.bg-icon:hover{    
+    background: rgba(168, 162, 162, 0.329);
+}
 .zingchart{
     overflow: hidden;
     width: 280px;
@@ -206,9 +214,28 @@ input {
 }
 .avt{    
     overflow: hidden;
+    position: relative;
 }
+
 .tron{
     border-radius: 50%;
+}
+.avt a{
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    opacity: 0;
+}
+.avt:hover a{
+    /* background: linear-gradient(rgba(33,33,33,.9)); */
+    opacity: 1;
+}
+.avt:hover img{
+    opacity: .7;
+   
 }
 .btn-zing{
     color: white;
@@ -221,15 +248,94 @@ input {
     padding-top: 0;
 }
 .vuong{
+    box-sizing: border-box;
     border-radius: 5px;
-    /* margin-left: -20px;    */
-}
-.ed-ph{
-    justify-content: flex-start;
-    align-items: flex-start;
+    /* margin-top: 10px;    */
+    width: 140px;
+    height: 140px;
 }
 .text-ph{
-    /* top: -30px;
-    left: -50px; */
-    /* position: relative; */
+    margin-left: -20px;
+}
+.p-title{
+    margin-top: 10px;   
+    font-size: 17px;
+    font-weight: bold;
+}
+.p-sub{
+    margin-top: -20px;
+    font-size: 12px;
+    color:blue;
+    text-transform: none;
+    
+    margin-bottom: 30px;
+}
+.p-rank{
+    font-size: 60px;
+    margin-right: 80px;
+    color: white;
+    text-shadow: 2px 2px 10px blue;
+    /* box-shadow: 2px 2px 10px blue; */
+}
+.p-date{
+    text-align: end;
+    right: 20px;
+    color:blue;
+}
+.bg-white{
+    background: white;
+    box-shadow: 2px 2px 10px rgb(211, 211, 203);
+}
+
+.card-list{
+    display: flex;
+    justify-content: flex-start ;
+    align-items: center;
+    height: 50px;
+    width: 350px;
+    border: 1px solid black;
+    padding-left: 5px;
+    position: relative;
+}
+.img-50{
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+}
+.img-50 a{    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.card-list:hover .img-50-layout{
+    opacity: 1;
+}
+.img-50-layout{    
+    background-color: rgba(15, 15, 15, 0.785);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    opacity: 0;
+}
+.text-ph{
+    flex-grow: 1;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.list-icon{
+    background: white;
+    height: 48px;
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    opacity: 0;
+}
+.card-list:hover .list-icon{
+    opacity: 1;
 }
