@@ -24,9 +24,10 @@
     background: rgba(168, 162, 162, 0.329);
 }
 .my-nav-icon{
-    margin-left: 0.6rem;
-    width: 1.1rem;
-    height: 1.1rem;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    color: black;
 }
 .bg-icon-drop{
     width: 2rem;
@@ -115,4 +116,120 @@ input {
 }
 .img-login{
     height: 70px;;
+}
+
+.content-img{
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+}
+.content-img img{    
+    transition: all 1s .5s;
+}
+.content-img:hover img{
+    transform: scale(1.1);
+}
+.content-icon{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;    
+    align-items: center;
+    color: white;
+    /* background: rgba(36, 30, 30, 0.664); */
+    opacity: 0;
+}
+.content-icon a{
+    color: white;
+}
+.content-icon:hover{    
+    background: rgba(36, 30, 30, 0.664);
+    opacity: 1;
+}
+.zingchart{
+    overflow: hidden;
+    width: 280px;
+    height: 60px; 
+    cursor: pointer;
+}
+.zingchart-container{   
+    background: linear-gradient(to right ,rgba(11, 172, 38, 0.5),rgba(172, 148, 11, 0.5));
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+    position: relative;
+    transition: all .5s;
+}
+.zingchart-container:hover{
+    transform: scale(1.05);
+}
+.zingchart-container img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .5;
+    z-index: -1;
+}
+.sub-bole{
+    margin-top: -15px;
+    font-weight: 800;
+}
+
+.editcard{
+    margin-top: 20px;
+    width: 30%;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+    text-transform: uppercase;
+    background: linear-gradient(to right,rgba(222,222,222,.4),rgba(225,225,225,.9)),url("http://loremflickr.com/500/300");
+}
+.editcard:hover .avt img{
+    transform: scale(1.1);
+}
+.editcard:hover .text-button p{
+    color: red;
+}
+.text-button{
+    text-align: right;
+}
+.text-button p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.avt{    
+    overflow: hidden;
+}
+.tron{
+    border-radius: 50%;
+}
+.btn-zing{
+    color: white;
+    background: linear-gradient(to right,rgb(228, 95, 183),rgb(248, 7, 148),rgb(57, 16, 241));
+    width: 120px;
+    height: 22px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 400;
+    padding-top: 0;
+}
+.vuong{
+    border-radius: 5px;
+    /* margin-left: -20px;    */
+}
+.ed-ph{
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.text-ph{
+    /* top: -30px;
+    left: -50px; */
+    /* position: relative; */
 }
